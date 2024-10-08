@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrela-Pet</title>
+</head>
+<body>
+    <form>
+        <img width="150px" src="./principal.png" alt="">
+        <h1>Cadastra-se um Pet</h1>
+        <input type="text" placeholder="nome">
+        <input type="text" placeholder="telefone">
+        <div class="group-btn">
+            <button class="cadastrar">Cadastrar</button>
+            <button class="entrar">Entrar</button>
+        </div>
+        <div class="pegada">
+            <img width="70" class="one" src="./pata.png" alt="">
+            <img width="70" class="two" src="./pata.png" alt="">
+        </div>
+    </form>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: black;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            height: 100vh;
+            max-width: 300px;
+            background-color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+
+            position: relative;
+        }
+        form img{
+            margin-bottom: 10px;
+        }
+        form h1{
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        form input{
+            outline: none;
+            border: none;
+            background-color: #777;
+            padding: 7px;
+            margin: 3px;
+        }
+        .group-btn{
+            margin-top: 15px;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3px;
+            width: 100%;
+        }
+        button{
+            flex: 1;
+            padding: 7px;
+            border: none;
+            font-size: .7rem;
+            border-radius: 5px;
+        }
+        .cadastrar{
+            color: #fff;
+            background-color: #1D4EFC;
+        }
+        .entrar{
+            color: #fff;
+            background-color: #25f021;
+        }
+        .one{
+            margin-right: 100px;
+        }
+        .one, .two{
+            margin-top: 20px;
+
+        }
+        .two{
+            position: absolute;
+            right: 30px;
+            margin-top: 50px;
+        }
+    </style>
+</body>
+</html>
